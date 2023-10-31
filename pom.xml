@@ -21,7 +21,9 @@
     </dependency>
   </dependencies>
     <build>
-        <finalName>java-example</finalName>
+        
+      <finalName>${project.artifactId}-${project.version}-build${buildNumber}</finalName>
+    <!-- Other build configuration -->
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -35,8 +37,7 @@
             </plugin>
         </plugins>
  
-    <finalName>${project.artifactId}-${project.version}-build${buildNumber}</finalName>
-    <!-- Other build configuration -->
+    
   </build>
 
 </project>
