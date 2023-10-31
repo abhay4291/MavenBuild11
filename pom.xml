@@ -35,4 +35,9 @@
             </plugin>
         </plugins>
   </build>
+  <build>
+    <finalName>${project.artifactId}-${project.version}-build${buildNumber}</finalName>
+    <!-- Other build configuration -->
+  </build>
+
 </project>
